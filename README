@@ -1,3 +1,3 @@
-+#Matlab Sound Equalizer
+
 We have made a 7 band equalizer, which means that 7 distinct ranges of frequencies can be modified separately. Each band is a fixed frequency range. Our project gives users the ability to amplify or attenuate each band separately. This is achieved using a butterworth filter. The first step is to use butter, a built in matlab function that returns butterworth filter coefficients for a particular range of cutoff frequencies, and a particular order. The next step is to filter the signal. This is done by using the matlab’s built in ‘filter’ function. It takes the filter arguments and the signal as an input and returns the filtered signal.
 One problem with this technique was that butter worth filters attenuates all other frequencies outside the pass band. So filtering is done in ‘parallel’. Each band is modified separately and then added together.
